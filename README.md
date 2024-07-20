@@ -65,6 +65,14 @@ Make sure you have the following installed on your machine:
 ### Usage
 
 Once both the backend and frontend servers are running, you can access the application in your browser at `http://localhost:3000`.
+### Demo
+
+![FitTrack Demo](https://img.youtube.com/vi/vCD1_3FgWc8/0.jpg)](https://www.youtube.com/watch?v=vCD1_3FgWc8)
+
+[![FitTrack Demo](https://img.youtube.com/vi/vCD1_3FgWc8/0.jpg)](https://www.youtube.com/watch?v=vCD1_3FgWc8)
+
+Click the image above to watch the demo video on YouTube.
+
 
 ### Project Structure
 
