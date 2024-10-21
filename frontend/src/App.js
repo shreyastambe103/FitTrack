@@ -1,7 +1,10 @@
+// frontend/src/App.js
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Navbar from './components/Navbar';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css'; // Import toastify CSS
 import './index.css';
 
 function App() {
@@ -30,6 +33,7 @@ function App() {
           </Routes>
         </div>
       </BrowserRouter>
+      <ToastContainer /> {/* Toast Container */}
     </div>
   );
 }

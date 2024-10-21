@@ -1,3 +1,4 @@
+//backend/models/workoutModel.js
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 //schema defines structure
