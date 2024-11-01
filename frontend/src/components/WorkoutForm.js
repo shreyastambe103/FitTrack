@@ -27,7 +27,7 @@ const WorkoutForm = () => {
     if (!response.ok) {
       setError(json.error);
       setEmptyFields(json.emptyFields);
-      toast.error(json.error); // Show error toast
+      //toast.error(json.error); // Show error toast
     }
 
     if (response.ok) {
@@ -68,7 +68,7 @@ const WorkoutForm = () => {
 
       <label>Load (in kg):</label>
       <input
-        type="number"
+        type="number" min={1}
         onChange={(e) => setLoad(e.target.value)}
         value={load}
         className={emptyFields.includes('load') ? 'error' : ''}
@@ -76,7 +76,7 @@ const WorkoutForm = () => {
 
       <label>Reps:</label>
       <input
-        type="number"
+        type="number" min={1}
         onChange={(e) => setReps(e.target.value)}
         value={reps}
         className={emptyFields.includes('reps') ? 'error' : ''}
