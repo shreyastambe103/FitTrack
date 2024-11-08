@@ -1,3 +1,4 @@
+//frontend/src/hooks/useLogout.js
 import { useAuthContext } from "./useAuthContext"
 import { useWorkoutsContext } from "./useWorkoutsContext"
 

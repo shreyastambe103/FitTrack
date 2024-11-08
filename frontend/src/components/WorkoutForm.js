@@ -1,3 +1,4 @@
+//frontend/src/components/WorkoutForm.js
 import React, { useState } from 'react';
 import { useWorkoutsContext } from '../hooks/useWorkoutsContext';
 import { Bounce, toast } from 'react-toastify'; // Import toast for notifications
