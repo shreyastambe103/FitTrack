@@ -1,4 +1,3 @@
-
 /* frontend/src/index.css */
 /*google font*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap');
@@ -160,6 +159,87 @@ input.error {
   border: 1px solid var(--error);
 }
 
+/* Navbar */
+nav{
+  display: flex;
+  align-items: center;
+}
+nav a{
+  margin-left: 10px;
+}
+.nav-right {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+/* Spacing for theme toggle */
+.nav-right .theme-toggle {
+  margin-right: 20px;
+}
+
+/* Styles for logged-in user info and auth links */
+.user-info, .auth-links {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.user-info span {
+  margin-right: 10px;
+  color: var(--text);
+}
+
+.auth-links a {
+  color: var(--text);
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.auth-links a:hover {
+  text-decoration: underline;
+}
+
+nav button{
+  background: transparent;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* auth form */
+form.signup, form.login{
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #ffffff00;
+  border-radius: 10px;
+  border: 2px solid var(--primary);
+}
+
+/* Theme Toggle Switch with Icons */
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.icon {
+  font-size: 1.2rem;
+  margin: 0 8px;
+  transition: color 0.3s;
+}
+
+.light-mode .icon:first-child { /* Sun icon style */
+  color: var(--primary);
+}
+
+.dark-mode .icon:last-child { /* Moon icon style */
+  color:var(--primary);
+}
+
 .toggle-switch {
   position: relative;
   width: 60px;
@@ -182,10 +262,10 @@ input.error {
   transition: transform 0.3s ease;
 }
 
-.toggle-switch.dark-mode {
-  background: var(--primary);
+.dark-mode .toggle-switch {
+  background-color: #333;
 }
 
-.toggle-switch.dark-mode::before {
+.dark-mode .toggle-switch::before {
   transform: translateX(30px);
 }
