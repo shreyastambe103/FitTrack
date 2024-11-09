@@ -65,11 +65,7 @@ header a {
 }
 
 /* HomePage */
-.home {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  gap: 100px;
-}
+
 
 .workout-details {
   background: var(--foreground);
@@ -269,3 +265,54 @@ form.signup, form.login{
 .dark-mode .toggle-switch::before {
   transform: translateX(30px);
 }
+  
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+}
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .workout-tip-container {
+    width: 100%;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+
+  /* Apply animated gradient */
+  background: linear-gradient(90deg, var(--primary), var(--primary) 50%, var(--text-muted));
+  background-size: 200% 200%;
+  animation: gradient-animation 10s ease infinite;
+  }
+  
+  .content-container {
+    display: flex;
+    width: 100%;
+    gap: 20px; /* Space between workouts list and form */
+  }
+  
+  .workouts-list, .workout-form {
+    flex: 1;
+    background-color: #6d060600;
+    padding: 20px;
+    border: 2px solid var(--primary);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
